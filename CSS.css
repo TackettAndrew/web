@@ -1,0 +1,198 @@
+@font-face {
+font-family: Nexa;
+src: url("graphics/Nexa Bold.otf") format("opentype");
+}
+@font-face {
+font-family: NexaLight;
+src: url("graphics/Nexa Light.otf") format("opentype");
+}
+
+a.nav-bar {
+    text-decoration: none;
+    display: block;
+}
+.n {
+    height:1px;
+    width:1px;
+    box-shadow:0 0 30px 0 rgba(255,255,255,.3);
+    border-radius:50%;
+}
+
+body {
+    font-kerning:normal;
+    background:#f7f7f7;
+    text-align:center;
+    font-family: 'Nexa', sans-serif;
+    margin: 0px;
+}
+
+/*----------------------------------------------------HEADER-----*/
+
+h1 {
+    font-size:100px;
+    color:white;
+    margin: 0px;
+    text-shadow: 6px 6px 0 rgba(0,0,0,.2);
+}
+
+.nav-bar {
+    z-index:100;
+    position: fixed;
+    background: #206ea3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    /*box-shadow: 0 1px 2px 1px rgba(0,0,0,0.3);*/
+}
+.nav-button {
+    padding: 20px;
+    max-width: 200000px;
+    max-height: 24px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    float: left;
+    line-height: 24px;
+    background: #;
+    margin: auto;
+}
+
+.hovershit :hover {
+    background: #3280B5;
+}
+
+.current {
+    padding: 20px;
+    max-width: 200000px;
+    max-height: 24px;
+    background: #3280b5;
+    color: white;
+    text-decoration: none;
+    float: left;
+    line-height: 24px;
+    background: #;
+}
+
+p.greeting {
+    font-size:20px;
+    color:white;
+}
+
+.greeting {
+    line-height:25px;
+    text-align:center;
+}
+
+.topbar {
+    position: relative;
+    margin-top: 64px;
+    z-index:1;
+    padding: 30px;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+/*-------------------------------------------------BODY----*/
+
+.footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    margin-top: 10em;
+    background: #111111;
+    color: white;
+    padding: 2em;
+}
+
+/*------MARKDOWNIFY-----*/
+
+.toc {
+    background: #ddd;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 40px;
+    padding: 20px;
+    line-height: 20px;
+}
+
+.toc > h2 {
+    margin: 0px;
+}
+
+.toc > a {
+    text-decoration: none;
+    color: black;
+}
+
+.toc > a:hover {
+    color: gray;
+}
+
+.md {
+    padding: 40px;
+    padding-top: 0;
+    font-family: NexaLight;
+    margin-right: 25%;
+    margin-left: 25%;
+    line-height: 22px;
+}
+
+.md > p{
+    margin-bottom: 0;
+}
+
+.scrollto {
+    height: 50px;
+}
+
+/*------404-------*/
+.four-oh-four-h-one {
+    color: white;
+    padding-top: 100px;
+    text-shadow: 6px 6px 0 rgba(0,0,0,.4);
+}
+
+.four-oh-four-h-two {
+    color: white;
+    text-shadow: 3px 3px 0 rgba(0,0,0,.4);
+    padding-right: 10%;
+    padding-left: 10%;
+    line-height: 30px;
+}
+
+.four-oh-four-a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    text-shadow: 4px 4px 0 rgba(0,0,0,.4);
+}
+
+.starscape {
+    z-index: -1;
+    position: absolute;
+    background: url(graphics/starscape.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+/*------COLORS----*/
+
+.pink {
+    background:#E82D96;
+}
+.purple {
+    background:#8d2cd3;
+}
+.indigo {
+    background:#5C2CD4;
+}
+.blue {
+    background:#2C87D4;
+}
+.aqua {
+    background:#2CD4C4;
+}
+.green {
+    background:#3280B5;
+}

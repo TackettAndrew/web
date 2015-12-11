@@ -1,0 +1,127 @@
+<!doctype HTML>
+<!--HEY LOOK AT ME OVER HERE HEY HEY HYE HYEHEY LOLEAFEUI LOOK HERE-->
+<!--ASCII a=0 b=1-->
+<!--rest is irrelevant-->
+<html>
+    <head>
+        <title>Hello</title>
+        <script>
+        //GLOBAL VARS
+var outputLog = ""
+var output = ""
+var select = ""
+window.onload = button;
+function button() {
+    document.getElementById("button").onclick = dotheif;
+    document.getElementById("tf-checker").onclick =  gotowa
+    }
+
+    
+function dotheif() {
+    select = document.getElementById("select").selectedIndex;
+    console.log(select);
+    if (select == 0) {
+        convertToLog();
+    }
+    else {
+        convertToExpo();
+    }
+    
+}
+
+function convertToLog() {
+    //using standard y=x^p
+    var input = document.getElementById("input").value;
+    
+    //finding Y
+    var ystop = input.search("=");
+    var y = input.substring(0,ystop);
+    
+    //finding X
+    var xstop = input.indexOf("^");
+    var x = input.substring(ystop+1,xstop);
+    
+    //finding P
+    var p = input.substring(xstop+1);
+    
+    //converting
+    output = "log_"+x+"("+y+")"+"="+p
+    document.getElementById("output").innerHTML = output;
+}
+
+function convertToExpo() {
+    //using standard log_x(y)=p
+    var input = document.getElementById("input").value;
+    
+    //finding X
+    var xstop = input.indexOf("(");
+    var x = input.substring(4,xstop);
+    
+    //finding Y
+    var ystop = input.indexOf(")");
+    var y = input.substring(xstop+1,ystop);
+    
+    //finding P
+    var pstop = input.indexOf("=");
+    var p = input.substring(pstop+1)
+    
+    //converting
+    outputLog = y+"="+x+"^"+p
+    document.getElementById("output").innerHTML = outputLog;
+}
+
+function gotowa() {
+    if (select == 0) {
+        window.open("https://www.wolframalpha.com/input/?i=" + output, '_blank');
+    }
+    else {
+        window.open("https://www.wolframalpha.com/input/?i=" + outputLog, '_blank');
+    }
+}
+</script>
+        <meta charset="ascii">
+        <style>
+            body{
+                font-family:Comic Sans, Comic Sans MS, cursive;
+                background: white;
+            }
+            h1,p,h2,marquee{
+                text-shadow:5px 5px 3px black;
+            }
+            select,button,textarea {
+                box-shadow: 3px 3px 10px red;
+            }
+            textarea {
+                background: blue;
+                color: cyan;
+            }
+        </style>
+    </head>
+    <h1>DOES THIS LOOK BAD ENOUGH??</h1>
+    <body id="color">
+        <button type="button"
+        onclick="document.getElementById('color').style.background = 'white'">other clicker</button>
+        <button type="button"
+        onclick="document.getElementById('color').style.background = 'url(OHGOD.gif)'">pls dont click</button>
+        <p>VIEW PAGE SOURCE</p>
+        <marquee>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</marquee>
+        <h1>Exponent - Log Converter</h1>
+        <p><b>INSTRUCTIONS</b></p>
+        <ul>
+            <li>Select the type of function you want to convert to the other from the dropdown menu</li>
+            <li>Write an exponential or log function in the text area</li>
+            <li>use these formats:<br><i>y=x^p</i><br><i>log_x(y)=p</i></li>
+            <li>convert</li>
+        </ul>
+        <h2>Input</h2>
+        <select id="select">
+            <option value="expo">Exponential</option>
+            <option value="log">Log</option>
+        </select><br>
+        <textarea id="input"></textarea>
+        <br>
+        <button id="button">Convert</button><br>
+        <textarea id="output"></textarea><button id="tf-checker">Is this true? (I outsource my true/false checking math because screw you)</button><br><br>
+        <p>Will you take points off for being difficult to look at without dying?</p>
+    </body>
+</html>

@@ -18,6 +18,10 @@ a.nav-bar {
     border-radius:50%;
 }
 
+.inlineimg {
+	max-width: 100%;
+}
+
 body {
     font-kerning:normal;
     background:#f7f7f7;
